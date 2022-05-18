@@ -1,0 +1,23 @@
+// Normalize Styles
+@import "node_modules/normalize.css/normalize";
+@import "node_modules/slick-carousel/slick/slick.scss";
+
+// Import Modules
+// @import "../_modules/link/link";
+@import "../_modules/section-title/section-title";
+@import "../_modules/hero-banner/hero-banner";
+@import "../_modules/broad-categories/broad-categories";
+@import "../_modules/explore-our-research/explore-our-research";
+@import "../_modules/mission-vision/mission-vision";
+@import "../_modules/our-people/our-people";
+@import "../_modules/people/people";
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+// mission-vision styles
+.mission-vision {
+  padding-top: 4.28rem;
+
+  &__rte {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    p {
+      font-size: 1.428rem;
+      text-align: center;
+    }
+
+    li {
+      &::marker {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}

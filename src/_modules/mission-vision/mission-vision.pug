@@ -1,0 +1,60 @@
+include ../hero-banner/hero-banner
+
+mixin mission-vision(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.mission-vision
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      h1 Our Vision &amp; Mission
+      article.mission-vision__rte
+        p
+          | The Centre for Nature-based Climate Solutions (CNCS) is a focal point for world-class research, thought leadership and education on nature-based solutions for climate mitigation and adaptation in the Asia-Pacific region.
+          br
+          br
+          | It brings together an interdisciplinary group of researchers to produce policy relevant science on natural climate solutions, and build capacity in academic, government and corporate sectors – for the overarching goal of achieving a carbon-neutral economy &amp; stable global climate.
+    +hero-banner({
+      short: true,
+      items: [
+        {
+          title: "Our Vision",
+          backgroundImage: "https://www.nus.edu.sg/cncs/wp-content/uploads/2020/09/Vision-and-Mission-banner-1024x768.jpg",
+          capitalize: true
+        }
+      ]
+    })
+
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      article.mission-vision__rte
+        p
+          | The Centre for Nature-based Climate Solutions is a focal point for world-class research and thought leadership on climate change impacts and solutions in service of society.
+          br
+          br
+          | The Centre’s vision is to empower government and corporate sector leaders of Singapore and the Asia-Pacific region to respond appropriately and decisively to climate change, for the overarching goal of achieving a carbon-neutral economy and stable global climate
+
+    +hero-banner({
+      short: true,
+      items: [
+        {
+          title: "Our Mission",
+          backgroundImage: "https://www.nus.edu.sg/cncs/wp-content/uploads/2020/08/Understanding-Impacts-1536x864.jpg",
+          capitalize: true
+        }
+      ]
+    })
+
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      article.mission-vision__rte
+        p
+          | The Centre’s mission is to produce policy-relevant science on nature-based climate solutions – tackling climate change by protecting and better managing natural ecosystems – to address knowledge gaps, build capacity and deliver pragmatic solutions and innovations to inform climate policies, strategies and actions to achieve the Centre’s vision.
+          br
+          br
+          | The Centre has two key mandates:
+        ol
+          li 
+            p To produce credible, salient and legitimate science that informs nature-based climate strategies and actions.
+          li 
+            p To build capacity and empower leadership in the public, private and people sectors to respond to climate challenges and opportunities.
+
+
+

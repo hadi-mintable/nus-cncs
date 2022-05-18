@@ -1,0 +1,98 @@
+.hero-banner {
+  height: 28.57rem;
+  position: relative;
+
+  &__short {
+    height: 24.57rem;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding: 0;
+    background-color: rgba(211, 211, 211, 0.3);
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+  }
+
+  .slick-prev {
+    left: 2rem;
+    right: auto;
+  }
+
+  .slick-next {
+    right: 2rem;
+    left: auto;
+  }
+
+  .slick-list {
+    height: 100%;
+    z-index: 1;
+  }
+
+  .slick-track {
+    height: 100%;
+  }
+
+  .slick-slide > div {
+    height: 100%;
+  }
+
+  &__container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    > div {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+  }
+
+  h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 5.71rem;
+    text-align: center;
+
+    &.is-capitalized {
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-banner {
+    .slick-prev {
+      left: 1rem;
+    }
+    .slick-next {
+      right: 1rem;
+    }
+    &__container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    h2 {
+      font-size: 4.71rem;
+    }
+  }
+}

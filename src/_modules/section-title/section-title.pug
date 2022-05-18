@@ -1,0 +1,5 @@
+mixin section-title(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  h1(class=`section-title ${spec.__class}`)= spec.title

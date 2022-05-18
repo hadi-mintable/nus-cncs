@@ -1,0 +1,29 @@
+mixin people(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .people
+    h2.people__title= spec.title
+    ul
+      each person in spec.people
+        li
+          .people__img
+            img(src= person.image alt=`${person.title} ${person.name}`)
+          a(href= person.url target="_blank")
+            h3.people__name
+              | #{person.title}
+              br
+              | #{person.name}
+          span.people__position= person.position
+          .people__socials
+            if person.email
+              span.fl-icon
+                a(href= `${person.email}`)
+                  i.fi-mail
+            if person.linkedin
+              span.fl-icon
+                a(href= person.linkedin)
+                  i.fi-social-linkedin
+            
+            
+              

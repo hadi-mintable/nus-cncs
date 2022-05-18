@@ -1,0 +1,26 @@
+mixin broad-categories(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.broad-categories
+    ul.fl-row.fl-row-fixed-width.fl-row-bg-none.broad-categories__container
+      li
+        a(href="/about-us")
+          img(src="https://www.nus.edu.sg/cncs/wp-content/uploads/2020/09/Understanding-Impacts.jpg")
+          h3 About Us
+          i(class="fa-solid fa-arrow-right-long")
+      li
+        a(href="/our-projects")
+          img(src="https://www.nus.edu.sg/cncs/wp-content/uploads/2020/09/Identifying-Solutions.jpg")
+          h3 Our Projects
+          i(class="fa-solid fa-arrow-right-long")
+      li
+        a(href="/our-research")
+          img(src="https://www.nus.edu.sg/cncs/wp-content/uploads/2020/09/Overcoming-Barriers.jpg")
+          h3 Our Research
+          i(class="fa-solid fa-arrow-right-long")
+      li
+        a(href="/giving")
+          img(src="https://www.nus.edu.sg/cncs/wp-content/uploads/2020/09/Prioritising-Actions.jpg")
+          h3 Giving
+          i(class="fa-solid fa-arrow-right-long")

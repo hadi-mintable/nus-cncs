@@ -1,0 +1,99 @@
+// broad-categories styles
+
+.broad-categories {
+  padding: 3.21rem 0;
+
+  ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex-basis: 37%;
+      margin: 2.142rem;
+      border-radius: 0.8571rem;
+      overflow: hidden;
+      position: relative;
+
+      a {
+        height: 0;
+        padding-top: 79.7%;
+        position: relative;
+        display: flex;
+
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+        }
+
+        img {
+          position: absolute;
+          inset: 0;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          transform: scale(1);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        h3 {
+          color: white;
+          z-index: 2;
+          position: absolute;
+          bottom: 0.857rem;
+          left: 0.857rem;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        i {
+          position: absolute;
+          bottom: 1.21rem;
+          right: 1.21rem;
+          color: white;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .broad-categories {
+    ul {
+      li {
+        flex-basis: 45%;
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .broad-categories {
+    ul {
+      li {
+        flex-basis: 100%;
+
+        a {
+          padding-top: 26.7%;
+
+          h3 {
+            text-transform: uppercase;
+            top: 50%;
+            left: 50%;
+            bottom: auto;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+          }
+          i {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

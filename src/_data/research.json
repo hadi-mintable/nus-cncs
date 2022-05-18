@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.nus.edu.sg/cncs/kelly-siman/",
+    "image": "https://www.nus.edu.sg/cncs/wp-content/uploads/2022/04/Kelly-10-1152x1536.jpg",
+    "name": "Dr. Kelly Siman",
+    "position": "Research Fellow"
+  },
+  {
+    "url": "https://www.nus.edu.sg/cncs/zheng-qiming/",
+    "image": "https://www.nus.edu.sg/cncs/wp-content/uploads/2022/04/QM-3-1536x2048.jpg",
+    "name": "Dr. Zheng Qiming",
+    "position": "Research Fellow"
+  },
+  {
+    "url": "https://www.nus.edu.sg/cncs/tasya-vadya-sarira/",
+    "image": "https://www.nus.edu.sg/cncs/wp-content/uploads/2022/04/Tasya-2-1536x2048.jpg",
+    "name": "Dr. Tasya Vadya Sarira",
+    "position": "MAC3 Blue Carbon Research Fellow"
+  },
+  {
+    "url": "https://www.nus.edu.sg/cncs/ada-quek/",
+    "image": "https://www.nus.edu.sg/cncs/wp-content/uploads/2022/04/Ada-8-1536x2048.jpg",
+    "name": "Ms. Ada Quek",
+    "position": "Research Assistant"
+  }
+]

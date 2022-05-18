@@ -1,0 +1,25 @@
+include ../people/people
+include ../section-title/section-title
+
+mixin our-people(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.our-people 
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      +section-title({
+        title: "Our People",
+        __class: 'our-people__title'
+      })
+      +people({
+        title: "Executive Committee",
+        people: site.data.executive
+      })
+      +people({
+        title: "Principal Investigators",
+        people: site.data.investigators
+      })
+      +people({
+        title: "Research Staff",
+        people: site.data.research
+      })

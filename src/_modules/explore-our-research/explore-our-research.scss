@@ -1,0 +1,127 @@
+// explore-our-research styles
+.explore-our-research {
+  &__title {
+    text-align: center;
+    font-size: 3.214rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+
+  // ul
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  // li
+  &__category {
+    flex-basis: 27%;
+    border-radius: 0.8571rem;
+    overflow: hidden;
+    margin: 1.5rem;
+
+    a {
+      height: 0;
+      padding-top: 100%;
+      position: relative;
+      display: flex;
+
+      &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+
+      img {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1.25rem 1.25rem;
+
+    h4 {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    i {
+      color: white;
+      text-align: right;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .explore-our-research {
+    &__categories {
+      max-width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .explore-our-research {
+    &__categories {
+      max-width: 100%;
+    }
+
+    &__category {
+      flex-basis: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .explore-our-research {
+    &__category {
+      flex-basis: 41%;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .explore-our-research {
+    &__category {
+      flex-basis: 100%;
+
+      a {
+        padding-top: 26.7%;
+      }
+    }
+
+    &__content {
+      top: 50%;
+      left: 50%;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+      i {
+        display: none;
+      }
+    }
+  }
+}

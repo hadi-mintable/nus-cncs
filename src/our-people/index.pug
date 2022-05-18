@@ -1,0 +1,10 @@
+extends ../_layouts/base
+
+include ../_modules/our-people/our-people
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  +our-people

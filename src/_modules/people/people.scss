@@ -1,0 +1,88 @@
+// people styles
+.people {
+  margin-bottom: 3rem;
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      flex-basis: 25%;
+      padding: 1.5rem;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+
+    img {
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__name {
+    color: #003d7c;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  &__socials {
+    display: flex;
+
+    .fl-icon {
+      margin: 0 0.75rem;
+      display: flex;
+    }
+
+    i {
+      font-size: 2.142rem;
+    }
+  }
+
+  &__position {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .people {
+    ul {
+      li {
+        flex-basis: 100%;
+      }
+    }
+
+    &__img {
+      width: 25.71rem;
+      height: 25.71rem;
+    }
+
+    &__name {
+      font-size: 1.15rem;
+    }
+
+    &__position {
+      font-size: 1.15rem;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://www.nus.edu.sg/cncs/koh-lian-pin/",
+    "image": "https://www.nus.edu.sg/cncs/wp-content/uploads/2022/04/LPK-1-1536x2048.jpg",
+    "title": "Professor",
+    "name": "Koh Lian Pin",
+    "position": "Director",
+    "email": "lianpinkoh@nus.edu.sg",
+    "linkedin": "https://www.linkedin.com/in/lianpinkoh/"
+  },
+  {
+    "url": "https://profile.nus.edu.sg/fass/geofd/",
+    "image": "https://www.nus.edu.sg/cncs/wp-content/uploads/2022/04/Dan-1-1536x2048.jpg",
+    "title": "Associate Professor",
+    "name": "Daniel Friess",
+    "position": "Deputy Director",
+    "email": "dan.friess@nus.edu.sg",
+    "linkedin": "https://www.linkedin.com/in/lianpinkoh/"
+  },
+  {
+    "url": "https://www.dbs.nus.edu.sg/staffs/l-roman-carrasco/?cid=1129",
+    "image": "https://www.nus.edu.sg/cncs/wp-content/uploads/2022/04/Roman-2-1536x2048.jpg",
+    "title": "Associate Professor",
+    "name": "L. Roman Carrasco",
+    "position": "Executive Committee",
+    "email": "dbsctlr@nus.edu.sg",
+    "linkedin": "https://www.linkedin.com/in/rom%C3%A1n-carrasco-a2a0594?originalSubdomain=sg"
+  }
+]
