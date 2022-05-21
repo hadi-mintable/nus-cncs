@@ -1,0 +1,22 @@
+include ../section-title/section-title
+include ../project-card/project-card
+
+mixin our-projects(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.our-projects
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      +section-title({
+        title: "Our Projects",
+        __class: 'our-projects__title'
+      })
+      .our-projects__list
+        each project in site.data.projects
+          +project-card({
+            image: project.image,
+            logo: project.logo,
+            title: project.title,
+            body: project.body,
+            url: "/some-project-url"
+          })

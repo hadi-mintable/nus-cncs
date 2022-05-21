@@ -1,0 +1,13 @@
+mixin project-card(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  li(class="project-card")
+    .project-card__img
+      img(src= spec.image alt= spec.title)
+    .project-card__main
+      .project-card__logo
+        img(src= spec.logo alt= spec.title)
+      h2.project-card__title= spec.title
+      p.project-card__body!= spec.body
+      a(href= spec.url class="project-card__link") Read more here
