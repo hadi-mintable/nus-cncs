@@ -5,6 +5,7 @@ mixin hero-banner(spec)
   section.hero-banner(class=`${spec.isCarousel ? "hero-banner__slick" : ""} ${spec.short ? "hero-banner__short" : ""}`)
     for item in spec.items
       .hero-banner__container(style=`background-image: url(${item.backgroundImage})`)
-        .fl-row.fl-row-fixed-width.fl-row-bg-none
-          h2(class=`${item.capitalize ? "is-capitalized" : ""}`)= item.title
+        if (item.title)
+          .fl-row.fl-row-fixed-width.fl-row-bg-none
+            h2(class=`${item.capitalize ? "is-capitalized" : ""}`)= item.title
   

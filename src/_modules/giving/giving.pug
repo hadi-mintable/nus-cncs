@@ -1,0 +1,74 @@
+include ../section-title/section-title
+include ../hero-banner/hero-banner
+
+mixin giving(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.giving
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      +section-title({
+        title: "Giving",
+        __class: "giving__title"
+      })
+    +hero-banner({
+      short: true,
+      items: [
+        {
+          backgroundImage: "https://www.nus.edu.sg/cncs/wp-content/uploads/2020/09/Vision-and-Mission-banner-1024x768.jpg",
+        }
+      ]
+    })
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      .giving__introduction
+        +section-title({
+          title: "Why Give",
+          __class: "giving__subtitle"
+        })
+        section
+          .giving__img
+            img(src="https://www.nus.edu.sg/cncs/wp-content/uploads/2022/05/Equinix-Giving-News.jpg" alt="Giving")
+          p.giving__body
+            | Despite their outsized benefits, nature-based climate solutions continue to face multiple, persistent challenges. The Centre’s ambition is to deliver the tools and knowledge needed to overcome these barriers and unlock nature’s full potential.
+            br
+            br
+            | However, doing so requires bold new technological and methodological approaches in science that are traditionally not funded by grants.
+            br
+            br
+            | To come to fruition, the Centre’s work relies on philanthropic support. Donors, corporates, and foundations are catalysts for sparking the high-risk, high-reward, innovative, and disruptive new ideas and solutions we pursue. Funding needs vary greatly, and prospective donors are invited choose an initiative that best aligns with their interests, brand, or philanthropic vision.
+      .giving__support
+        +section-title({
+          title: "What can you support?",
+          __class: "giving__subtitle"
+        })
+        ul
+          li
+            img(src="")
+            span 
+              | Support research
+              br
+              | scholarships &amp; fellowships
+          li
+            img(src="")
+            span
+              | Support visiting
+              br
+              | Professorships
+          li
+            img(src="")
+            span
+              | Support
+              br
+              | Fieldwork
+          li
+            img(src="")
+            span
+              | Support
+              br
+              | Outreach
+      .giving__notice
+        p 
+          | To discuss giving opportunities,
+          br
+          | please contact 
+          a(href="mailto:cncs@nus.edu.sg") cncs@nus.edu.sg

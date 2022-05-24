@@ -1,0 +1,33 @@
+
+
+include ../article-card/article-card
+
+mixin articles-listing(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .fl-row.fl-row-fixed-width.fl-row-bg-none
+    section.articles-listing
+      .articles-listing__sidebar
+        h3.title Filter by
+        .articles-listing__list
+          span Research Areas
+          ul
+            each area in site.data.researchAreasSidebar
+              li
+                label
+                  input(type="radio" name="researchAreasSidebar")
+                  span= area.label
+        .articles-listing__list
+          span Content Type
+          ul
+            each area in site.data.contentTypeSidebar
+              li
+                label
+                  input(type="radio" name="contentTypeSidebar")
+                  span= area.label
+      ul.articles-listing__articles
+        each article in site.data.articles
+          +article-card({
+            article: article
+          })

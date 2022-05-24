@@ -1,0 +1,18 @@
+mixin article-card(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - var article = spec.article
+
+  .article-card
+    .article-card__sidebar
+      h2.header Featured Journal Article
+      a(href= article.url title= article.title) Read
+    .article-card__body
+      h3.title= article.title
+      span.attribution!= article.attribution
+      p.body= article.body
+      span.published= `Published ${article.publishDate}`
+    .article-card__logo
+      img(src= article.logo)
+      
+

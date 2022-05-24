@@ -1,0 +1,9 @@
+extends ../_layouts/base
+include ../_modules/giving/giving
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  +giving

@@ -1,0 +1,83 @@
+// articles-listing styles
+.articles-listing {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__sidebar {
+    border-radius: 0.25rem;
+    padding: 1rem 1rem 6rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: 250px;
+
+    .title {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding-top: 0.75rem;
+
+      li {
+        padding-bottom: 0.5rem;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        span {
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 1rem;
+
+    > span {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+
+  &__articles {
+    margin: 0;
+    width: calc(100% - 250px - 3rem);
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .articles-listing {
+    &__sidebar {
+      width: 220px;
+    }
+
+    &__articles {
+      width: calc(100% - 220px - 2.25rem);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .articles-listing {
+    flex-direction: column;
+    position: relative;
+
+    &__sidebar {
+      width: 100%;
+
+      .title {
+        display: none;
+      }
+    }
+
+    &__articles {
+      width: 100%;
+    }
+  }
+}

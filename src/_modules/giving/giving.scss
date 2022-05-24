@@ -1,0 +1,123 @@
+// giving styles
+.giving {
+  padding: 4.28rem 0 7.28rem;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__introduction {
+    padding-top: 4.28rem;
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      max-width: 85%;
+      margin: 0 auto;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__img {
+    position: relative;
+    flex-basis: 35%;
+    border-radius: 0.4rem;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__body {
+    flex-basis: calc(65% - 3rem);
+  }
+
+  &__support {
+    padding: 5.5rem 0;
+
+    ul {
+      list-style-type: none;
+      max-width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &__notice {
+    background-color: #05407e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2.8rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .giving {
+    &__introduction {
+      section {
+        flex-direction: column;
+        max-width: 90%;
+      }
+    }
+
+    &__img {
+      margin-bottom: 3rem;
+
+      img {
+        position: relative;
+      }
+    }
+
+    &__body {
+      margin-bottom: 0;
+    }
+
+    &__notice {
+      font-size: 2rem;
+      max-width: 85%;
+      padding: 1.5rem;
+    }
+  }
+}
