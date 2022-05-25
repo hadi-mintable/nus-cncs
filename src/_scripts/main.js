@@ -1,15 +1,20 @@
 // Main javascript entry point
 // Should handle bootstrapping/starting application
 
-'use strict';
+"use strict";
 
-import 'core-js';
-import 'regenerator-runtime/runtime';
-import $ from 'jquery';
-import { HeroBanner } from '../_modules/hero-banner/hero-banner';
+import "core-js";
+import "regenerator-runtime/runtime";
+import $ from "jquery";
+import { HeroBanner } from "../_modules/hero-banner/hero-banner";
+import ArticlesListing from "../_modules/articles-listing/articles-listing";
 
 $(() => {
-  if ($('.hero-banner').length) {
+  if ($(".hero-banner").length) {
     new HeroBanner();
+  }
+
+  if ($(".articles-listing").length) {
+    new ArticlesListing();
   }
 });

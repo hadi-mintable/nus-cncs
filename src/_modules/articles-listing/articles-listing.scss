@@ -1,4 +1,7 @@
 // articles-listing styles
+#mobileTrigger {
+  display: none;
+}
 .articles-listing {
   padding: 0 2rem;
   display: flex;
@@ -9,6 +12,7 @@
     border-radius: 0.25rem;
     padding: 1rem 1rem 6rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: white;
     width: 250px;
 
     .title {
@@ -64,12 +68,36 @@
 }
 
 @media screen and (max-width: 767px) {
+  #mobileTrigger {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 40px;
+    font-weight: bold;
+    background-color: #05407e;
+    outline: none;
+  }
   .articles-listing {
     flex-direction: column;
     position: relative;
+    padding: 0;
 
     &__sidebar {
       width: 100%;
+      position: absolute;
+      left: 0;
+      top: 40px;
+      max-height: 0;
+      visibility: hidden;
+      transition: max-height 0.7s ease-in-out;
+      overflow: hidden;
+      margin-bottom: 1rem;
+
+      &.is-open {
+        max-height: 2000px;
+        visibility: visible;
+      }
 
       .title {
         display: none;
@@ -78,6 +106,7 @@
 
     &__articles {
       width: 100%;
+      padding-top: calc(40px + 2rem);
     }
   }
 }
