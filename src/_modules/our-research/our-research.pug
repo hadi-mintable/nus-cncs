@@ -1,0 +1,36 @@
+include ../section-title/section-title
+include ../hero-banner/hero-banner
+
+mixin our-research(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.our-research
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      +section-title({
+        title: "Our Research",
+        __class: "our-research__title"
+      })
+      +hero-banner({
+        short: true,
+        items: [
+          {
+            backgroundImage: "https://www.nus.edu.sg/cncs/wp-content/uploads/2020/08/Understanding-Impacts-1536x864.jpg",
+          }
+        ]
+      })
+      .our-research__wrapper
+        +section-title({
+          title: "Our Research Areas",
+          __class: "our-research__header"
+        })
+        ul
+          each area in site.data.researchAreas
+            li(data-body= area.body)
+              img(src= area.icon)
+              h4!= area.title
+        .our-research__chosen
+          p Climate change is a shift in our planet’s weather and climate systems that brings about increasing average temperatures and more erratic weather events, rising seas, changes inhabitats and wildlife, and a myriad of other impacts. Understanding the implications and likelihood of climate change impacts on natural and human systems in the Asia-Pacific region is important for developing strategies to safeguard the region against environmental, social and economic perturbations.
+      if block
+        block
+

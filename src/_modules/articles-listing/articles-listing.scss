@@ -88,14 +88,12 @@
       position: absolute;
       left: 0;
       top: 40px;
-      max-height: 0;
       visibility: hidden;
-      transition: max-height 0.7s ease-in-out;
-      overflow: hidden;
+      opacity: 0;
       margin-bottom: 1rem;
 
       &.is-open {
-        max-height: 2000px;
+        opacity: 1;
         visibility: visible;
       }
 
