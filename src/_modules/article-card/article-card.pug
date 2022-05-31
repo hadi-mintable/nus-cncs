@@ -14,5 +14,6 @@ mixin article-card(spec)
       span.published= `Published ${article.publishDate}`
     .article-card__logo
       img(src= article.logo)
+    a(href= article.url title= article.title) Read
       
 

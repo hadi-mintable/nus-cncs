@@ -31,14 +31,16 @@
         cursor: pointer;
 
         img {
-          width: 60%;
+          max-width: 118px;
           aspect-ratio: 1/1;
           object-fit: contain;
+          margin-bottom: 1rem;
         }
 
         h4 {
           text-align: center;
-          font-size: 1.5rem;
+          font-size: 1.375rem;
+          font-weight: bold;
         }
       }
     }
@@ -61,6 +63,28 @@
       color: white;
       line-height: 1.9;
       margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .our-research {
+    &__wrapper {
+      ul li img {
+        max-width: 96px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-research {
+    &__wrapper {
+      ul {
+        gap: 1rem;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+      }
     }
   }
 }

@@ -11,6 +11,10 @@
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   }
 
+  > a {
+    display: none;
+  }
+
   a {
     color: white;
     background-color: #dd8136;
@@ -72,6 +76,12 @@
 @media screen and (max-width: 993px) {
   .article-card {
     flex-direction: column;
+    align-items: flex-start;
+
+    > a {
+      display: flex;
+      margin-top: 1rem;
+    }
 
     &__sidebar {
       flex-direction: row;
@@ -97,6 +107,7 @@
     &__logo {
       display: flex;
       justify-content: flex-end;
+      width: 100%;
     }
   }
 }
@@ -105,9 +116,6 @@
   .article-card {
     &__logo {
       display: none;
-    }
-
-    &__sidebar {
     }
   }
 }
