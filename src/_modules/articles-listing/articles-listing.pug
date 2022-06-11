@@ -8,7 +8,7 @@ mixin articles-listing(spec)
 
   .fl-row.fl-row-fixed-width.fl-row-bg-none
     section.articles-listing
-      form(class="articles-listing__search" action="/our-research")
+      div(class="articles-listing__search")
         input(type="search" name="s" placeholder="Search Research")
         button#submitSearch
           svg.svg-inline--fa.fa-search.fa-w-16.collapsed(data-toggle='collapse' data-target='#search-collapse' href='#' aria-hidden='true' focusable='false' data-prefix='fa' data-icon='search' role='img' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 512 512' data-fa-i2svg='')
@@ -23,7 +23,7 @@ mixin articles-listing(spec)
               each area in site.data.researchAreasSidebar
                 li
                   label
-                    input(type="radio" name="researchAreasSidebar")
+                    input(type="radio" data-value= area.value name="researchCategory")
                     span= area.label
           .articles-listing__list
             span Content Type
@@ -31,7 +31,7 @@ mixin articles-listing(spec)
               each area in site.data.contentTypeSidebar
                 li
                   label
-                    input(type="radio" name="contentTypeSidebar")
+                    input(type="radio" name="contentType")
                     span= area.label
         ul.articles-listing__articles
           each article in site.data.articles

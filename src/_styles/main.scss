@@ -1,5 +1,4 @@
 // Normalize Styles
-@import "node_modules/normalize.css/normalize";
 @import "node_modules/slick-carousel/slick/slick.scss";
 
 // Box sizing partial styles:
@@ -12,7 +11,15 @@
   box-sizing: border-box;
 }
 
-// Import Modules
+.fl-row-fixed-width {
+  max-width: 1180px;
+}
+
+.fl-row,
+.fl-row-content {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 // reusable modules
 @import "../_modules/section-title/section-title";

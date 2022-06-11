@@ -1,29 +1,38 @@
 [
   {
-    "label": "All"
+    "label": "All",
+    "value": ""
   },
   {
-    "label": "Blue carbon"
+    "label": "Blue carbon",
+    "value": "blue_carbon"
   },
   {
-    "label": "Carbon Prospecting"
+    "label": "Carbon Prospecting",
+    "value": "carbon_prospecting"
   },
   {
-    "label": "Co-Benefits"
+    "label": "Co-Benefits",
+    "value": "co_benefits"
   },
   {
-    "label": "Agriculture"
+    "label": "Agriculture",
+    "value": "agriculture"
   },
   {
-    "label": "Remote Sensing"
+    "label": "Remote Sensing",
+    "value": "remote_sensing"
   },
   {
-    "label": "Energy"
+    "label": "Energy",
+    "value": "energy"
   },
   {
-    "label": "Ecosystems"
+    "label": "Ecosystems",
+    "value": "ecosystems"
   },
   {
-    "label": "Wildlife Trade"
+    "label": "Wildlife Trade",
+    "value": "wildlife_trade"
   }
 ]
