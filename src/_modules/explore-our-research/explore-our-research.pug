@@ -4,7 +4,8 @@ mixin explore-our-research(spec)
 
   section.explore-our-research 
     .fl-row.fl-row-fixed-width.fl-row-bg-none.explore-our-research__container
-      h2.explore-our-research__title Explore our Research
+      if (!spec.hideTitle)
+        h2.explore-our-research__title Explore our Research
       ul.explore-our-research__categories
         for category in site.data.exploreOurResearch 
           li(class="explore-our-research__category" data-category=category.param)

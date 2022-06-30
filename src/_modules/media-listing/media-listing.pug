@@ -1,0 +1,14 @@
+include ../section-title/section-title
+
+mixin media-listing(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.media-listing
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      +section-title({
+        title: "In the media",
+        __class: "media-listing__title"
+      })
+      if block
+        block

@@ -1,0 +1,14 @@
+include ../section-title/section-title
+
+mixin resources-listing(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section.resources-listing
+    .fl-row.fl-row-fixed-width.fl-row-bg-none
+      +section-title({
+        title: "Resources",
+        __class: "resources-listing__title"
+      })
+      if block
+        block
