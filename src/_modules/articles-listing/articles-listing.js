@@ -7,6 +7,21 @@ export default class ArticlesListing {
     const $mobileTrigger = $("#mobileTrigger");
     const $sidebar = $(".articles-listing__sidebar");
     const $label = $(".articles-listing__list label");
+    const filtersArray = ["researchCategory", "contentType"];
+
+    filtersArray.map(filter => {
+      // give checked attribute to researchCategory chosen
+      if (params.has(filter)) {
+        const researchCategory = params.get(filter);
+
+        $(`input[type="radio"][data-value="${researchCategory}"]`).prop(
+          "checked",
+          true
+        );
+      }
+    });
+
+    // give checked attribute to contentType chosen
 
     $mobileTrigger.on("click", e => {
       e.preventDefault();
@@ -29,6 +44,12 @@ export default class ArticlesListing {
 
     const $searchTrigger = $("#submitSearch");
     const $searchInput = $(".articles-listing__search input");
+
+    if (params.has("s")) {
+      const searchValue = params.get("s");
+
+      $searchInput.val(searchValue);
+    }
 
     $searchTrigger.on("click", function(e) {
       const value = $searchInput.val();

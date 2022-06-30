@@ -8,9 +8,10 @@ block config
   - baseUrl = '../'
 
 block content
-  +hero-banner({
-    items: site.data.landingBanner,
-    isCarousel: true
-  })
-  +broad-categories
-  +explore-our-research
+  .page-bottom-spacer
+    +hero-banner({
+      items: site.data.landingBanner,
+      isCarousel: true
+    })
+    +broad-categories
+    +explore-our-research

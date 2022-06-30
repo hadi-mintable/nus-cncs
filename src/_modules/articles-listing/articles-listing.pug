@@ -31,7 +31,7 @@ mixin articles-listing(spec)
               each area in site.data.contentTypeSidebar
                 li
                   label
-                    input(type="radio" name="contentType")
+                    input(type="radio" data-value= area.value name="contentType")
                     span= area.label
         ul.articles-listing__articles
           each article in site.data.articles

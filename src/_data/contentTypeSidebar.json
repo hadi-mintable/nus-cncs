@@ -1,14 +1,18 @@
 [
   {
-    "label": "Scientific Publication"
+    "label": "Scientific Publication",
+    "value": "scientific_publication"
   },
   {
-    "label": "White Papers"
+    "label": "White Papers",
+    "value": "white_papers"
   },
   {
-    "label": "Reports"
+    "label": "Reports",
+    "value": "reports"
   },
   {
-    "label": "Book Chapter"
+    "label": "Book Chapter",
+    "value": "book_chapter"
   }
 ]
